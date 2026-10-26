@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 2rem 2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222;
+  background: #fff;
+  border-top: 1px solid #333;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 1.2rem 0;
+}
+
+.contenedor {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.productos {
+  flex: 2;
+}
+
+.estado {
+  color: #a33;
+  font-size: 0.85rem;
+  min-height: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 2px solid #ccc;
+}
+
+td {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+td h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+}
+
+.ref {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cantidad button {
+  width: 1.6rem;
+  height: 1.8rem;
+  border: 1px solid #bbb;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.cantidad button:hover {
+  background: #ddd;
+}
+
+.cantidad input {
+  width: 2.2rem;
+  height: 1.8rem;
+  text-align: center;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.cantidad input::-webkit-outer-spin-button,
+.cantidad input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.resumen {
+  flex: 1;
+  background: #e0e0e0;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+.resumen h2 {
+  font-size: 1.1rem;
+  margin: 0 0 2rem;
+}
+
+.resumen ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.6rem;
+}
+
+.resumen li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #555;
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0 1rem 1rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resumen {
+    min-height: auto;
+  }
+}
